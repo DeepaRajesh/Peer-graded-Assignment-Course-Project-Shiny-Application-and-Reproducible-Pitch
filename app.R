@@ -1,4 +1,4 @@
-#UI.R
+## ui.R
 library(shiny)
 ui <- fluidPage(
   titlePanel("Iris Dataset"),
@@ -17,6 +17,7 @@ ui <- fluidPage(
     )
   )
 )
+## server.R
 server <- function(input, output) {
   output$distPlot <- renderPlot({
     if(input$p=='a'){
